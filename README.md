@@ -14,18 +14,22 @@ $ go get github.com/toashd/log
 
 For usage and examples see the [Godoc](http://godoc.org/github.com/toashd/log).
 
+![alt log](https://cloud.githubusercontent.com/assets/1436166/12043339/a920b3f4-ae84-11e5-87da-ab70e5ce1fe0.png)
+
 Usage is easy enough:
 
 ```go
 
-	log.Debug("debug message")
-	log.Info("info message")
-	log.Warn("warning message")
-  	log.Error("error message")
+log.Debug("debug message")
+log.Info("info message")
+log.Warn("warning message")
+log.Error("error message")
 
-	log.Errorf("%s error message", "formatted")
+log.Errorf("%s error message", "formatted")
 
 ```
 
 Color and timestamp are enabled by default but can be easily disabled.
 
+## License
+MIT
