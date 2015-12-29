@@ -117,7 +117,6 @@ func output(w io.Writer, l Level, v ...interface{}) error {
 	if l < level {
 		return nil
 	}
-	//t := time.Now().Format(timeFormat)
 	_, err := fmt.Fprint(w, colorize(l, timestamp(levelPrefix[l]+fmt.Sprintln(v...))))
 	return err
 }
